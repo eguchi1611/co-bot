@@ -21,8 +21,10 @@ client.on("messageCreate", (message) => {
     if (random < 0.9) {
       message.channel.send("ジェネレーションシステム");
     } else {
-      message.channel.send("ワーキングシステム😎");
+      message.channel.send("ワーキングシステム 😎");
     }
+  } else if (message.content.includes("ウンポーコ")) {
+    message.channel.send("それ音楽記号な");
   }
 });
 

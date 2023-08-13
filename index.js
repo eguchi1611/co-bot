@@ -19,9 +19,9 @@ client.on("messageCreate", (message) => {
   if (triggers.some((word) => word === message.content.toLowerCase())) {
     const random = Math.random();
     if (random < 0.9) {
-      message.reply("ジェネレーションシステム");
+      message.channel.send("ジェネレーションシステム");
     } else {
-      message.reply("ワーキングシステム😎");
+      message.channel.send("ワーキングシステム😎");
     }
   }
 });
